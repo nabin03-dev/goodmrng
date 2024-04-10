@@ -1,0 +1,42 @@
+.flip{ width:240px; height:200px; margin:10px; border-radius:20px;}
+
+.flip > .front{
+	position:absolute;
+	transform: perspective( 600px ) rotateY( 0deg );
+	background-image: url(http://images6.fanpop.com/image/photos/37500000/Nozomi-Tojo-love-live-school-idol-project-37513200-338-500.jpg); width:240px; height:400px; border-radius: 7px;
+	backface-visibility: hidden;
+	transition: transform .5s linear 0s;
+}
+.flip > .back{
+	position:absolute;
+	transform: perspective( 600px ) rotateY( 180deg );
+	background-image: url(https://s-media-cache-ak0.pinimg.com/236x/4f/a7/5c/4fa75c04f6bbe4e9bffe2603a63ddab5.jpg); width:240px; height:400px; border-radius: 7px;
+	backface-visibility: hidden;
+	transition: transform .5s linear 0s;
+}
+.flip:hover > .front{
+	transform: perspective( 600px ) rotateY( -180deg );
+}
+.front{
+	transform: perspective( 600px ) rotateY( -180deg );
+	font-weight: lighter;
+  	color: #fff;
+ 	text-shadow: 1px 1px 2px black, 0 0 25px blue, 0 0 5px purple;
+ 	box-shadow: 2px 2px 4px #000000;
+}
+.flip:hover > .back{
+	transform: perspective( 600px ) rotateY( 0deg );
+	font-weight: lighter;
+  	color: #fff;
+
+ 	text-shadow: 2px 2px 4px #000000;
+ 	box-shadow: 2px 2px 4px #000000;
+}
+.back{
+	transform: perspective( 600px ) rotateY( 0deg );
+	font-weight: lighter;
+  	color: #fff;;
+ 	text-shadow: 2px 2px 4px #000000;
+ 	box-shadow: 2px 2px 4px #000000;
+ 	@import url('https://fonts.googleapis.com/css?family=Annie+Use+Your+Telescope');
+}
